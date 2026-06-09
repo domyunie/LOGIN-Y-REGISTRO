@@ -20,11 +20,15 @@ function registerUser() {
     return;
   }
 
+  if (username === "ADMIN") {
+    alert('El nombre de usuario no puede ser "ADMIN"');
+    return;
+  }
 
   users.push({username, password});
   localStorage.setItem('users', JSON.stringify(users));
   alert('Usuario registrado correctamente');
-  window.location.href = 'LOGIN.html';
+  window.location.href = 'login.html';
 }
 
 function loginUser() {
