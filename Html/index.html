@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMG</title>
+    <link rel="stylesheet" href="../Css/uy.css">
+</head>
+<body>
+    <div>
+        <h1>OMG HOLAAAAAAAAAAAA</h1>
+        <h3>Gracias por llegar hasta aqui, ahora mira a un perrito! :D</h3>
+    </div>
+    <div class="content content-center">
+    <img src="../Multimedia/chucho.png" alt="Chucho" class="img-neon"> </div>
+
+<script>
+    const imgs = document.querySelectorAll('.img-neon'); // Aquí sí va el punto
+    window.addEventListener('scroll', () => {
+        imgs.forEach(img => {
+            const top = img.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) {
+                img.classList.add('show'); // Aquí no va el punto porque ya se sabe que es una clase
+            }
+        });
+    });
+</script>
+
+    
+</body>
+</html>
