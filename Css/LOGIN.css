@@ -6,72 +6,85 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(29, 28, 28);
-    background-color: #FFD7F1;
-    
-    display: flex;
+    background: linear-gradient(90deg,#FFD7F1, #f171ca) ;
+    font-size: 20px;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-}
-
-.tarjeta {
-    width: 500px;          
-    height: 500px;             
-    background-color: #ffffff;
-    padding: 40px;           
-    border: 3px solid rgb(255, 255, 255);    
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.3); 
-    border-radius: 25px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
-.title {
-    color: #B94E8A; 
-    text-align: center; 
-}
-
-.login {
     text-align: center;
-    color: #B94E8A;
-    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
-.Field {
+h1 {
+    font-size: 30px;
+    justify-content: center;
+}
+
+form {
+    background: rgb(255, 255, 255);
+    padding: 60px;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 140px auto;
+    outline: none;
+    border: black 0.5px solid;
+}
+
+.submit-bttn {
     width: 100%;
-    border-radius: 12px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    display: flex;
-    padding: 22px 14px;
-    flex-direction: column; 
-    gap: 15px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    background: 135deg, #FFD7F1 100%;
-  box-shadow: 0 4px 15px rgba(117, 7, 93, 0.137);
-  outline: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-.btn {
-  background: linear-gradient(135deg, #D87CA1 0%, #B94E8A 100%);
-  padding: 12px 184px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(107, 4, 56, 0.3);
-  transition: all 0.3s ease;
-  outline: none;
+.submit-bttn button {
+     width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    background: linear-gradient(#ffd3f2,#ffb8ea);
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.btn:hover {
-  background: linear-gradient(135deg, #B94E8A 0%, #D87CA1 100%);
-  transform: translateY(-2px); 
-  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5); 
+.submit-bttn button:hover {
+    color: #000000;
+    border-color: #ffd3f2;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 185, 255, 0.868);
 }
 
-.btn:active {
-  transform: translateY(1px); 
-  box-shadow: 0 2px 10px rgba(37, 117, 252, 0.3);
+.name-text{
+    padding: 10px auto;
+}
+
+.Name {
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 10px 15px;
+    border: 1px solid #afafaf;
+    outline: none;
+    font-size: 18px;
+}
+
+.Name a:hover {
+    background: #ffd3f2;
+    color: #fff;
+    border-color: #f7b2f7;
+}
+
+.Apellidos {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 18px;
 }

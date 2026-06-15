@@ -31,23 +31,4 @@ function registerUser() {
   window.location.href = 'login.html';
 }
 
-function loginUser() {
-  let username = document.getElementById('loginUsername').value.trim();
-  let password = document.getElementById('loginPassword').value;
-
-  if (!username || !password) {
-    alert('Usuario y contraseña requeridos');
-    return;
-  }
-
-  let user = users.find(u => u.username === username && u.password === password);
-
-  if (user) {
-    localStorage.setItem('userSession', JSON.stringify({type: 'user', username}));
-    alert('Login exitoso');
-    window.location.href = 'Principal.html';
-  } else {
-    alert('Credenciales inválidas');
-  }
-}
 
