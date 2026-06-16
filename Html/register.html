@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica</title>
-    <link rel="stylesheet" href="../Css/login.css">
+    <link rel="stylesheet" href="../Css/register.css">
 </head>
 <body>
     <div>
         <div class="form">
             <form action="">
-            <h1>Iniciar Sesión</h1><br>
-            <label class ="name-text"for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="Name" required><br>
-            <label class ="name-text"for="Apellidos">Apellidos</label><br><br>
-            <input type="text" id="Apellidos" name="Apellidos" placeholder="Ingrese sus apellidos" class="Apellidos" required><br><br>
+            <h1>Registrate con nosotros!</h1><br>
+             <label class ="User-text"for="contraseña">Nombre:</label><br><br>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre" class="name" required><br>
+            <label class ="User-text"for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" class="username" required><br>
+            <label class ="User-text"for="contraseña">Contraseña:</label><br><br>
+            <input type="password" id="contrasena" name="contraseña" placeholder="Ingrese su contraseña" class="password" required><br>
             <div class ="submit-bttn">
-                <button type="submit" class="submit-bttn">Entra a Canrisk!</button>
+                <button type="submit" class="submit-bttn" id="submit-bttn">Ingresa!</button>
                 <label class="submit-bttn" for="submit" ></label>
             </div>
             </form>
@@ -26,6 +28,6 @@
 </html>
         </div>
     </div>
-    <script src="../Js/login.js"></script>
+    <script src="../Js/register.js"></script>
 </body>
 </html>
