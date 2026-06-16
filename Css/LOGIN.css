@@ -56,11 +56,11 @@ form {
     box-shadow: 0 0 20px rgba(255, 185, 255, 0.868);
 }
 
-.name-text{
+.User-text{
     padding: 10px auto;
 }
 
-.Name {
+.username {
     margin: 30px auto;
     background: #ffffff;
     border-radius: 10px;
@@ -72,13 +72,13 @@ form {
     font-size: 18px;
 }
 
-.Name a:hover {
+.username a:hover {
     background: #ffd3f2;
     color: #fff;
     border-color: #f7b2f7;
 }
 
-.Apellidos {
+.password {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     width: 100%;
