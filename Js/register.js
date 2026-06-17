@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const usuarioInput = document.getElementById("usuario");
   const contrasenaInput = document.getElementById("contrasena");
 
-
   let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
   form.addEventListener("submit", (e) => {
@@ -38,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("📋 Usuarios registrados:", usuarios);
     alert(`¡Registro exitoso! Bienvenido, ${name} 🎉`);
-    form.reset();
+
+    window.location.href = "../Html/login.html"; // ✅ Redirección dentro del listener
   });
 
   function validarNombre(name) {
@@ -69,19 +69,3 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 });
-
-const nuevoUsuario = {
-  id: Date.now(),
-  nombre: name,
-  usuario: usuario,
-  contrasena: contrasena,
-  fechaRegistro: new Date().toLocaleDateString("es-ES"),
-};
-
-usuarios.push(nuevoUsuario);
-localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-alert(`¡Registro exitoso! Bienvenido, ${name}`);
-
-window.location.href = "../Html/login.html";
-
